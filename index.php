@@ -6,13 +6,13 @@ include "koneksi.php"
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Website Pemesanan Makanan</title>
+  <title>Website pesan makanan kantin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styleForm.css">
   <style>
     .hero {
-    background-color: aqua;
+    background-color: white;
 }
 
 .img-fluid {
@@ -20,7 +20,7 @@ include "koneksi.php"
 }
 
 #about {
-    background-color: blueviolet;
+    background-color: black;
     color: white;
 }
   </style>
@@ -31,14 +31,14 @@ include "koneksi.php"
 <nav class="navbar navbar-expand-lg bg-primary sticky-top navbar-dark">
   <div class="container">
     <img src="img/logo.png" alt="logo" class="rounded-circle" width="50" height="50">
-    <a class="navbar-brand" href="#">Dean Ansel Picauly</a>
+    <a class="navbar-brand" href="#">Abidzar Al-Ghifari</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#cafeteria" class="nav-link">Cafetaria List</a></li>
+        <li class="nav-item"><a href="#cafeteria" class="nav-link">Opsi</a></li>
         <li class="nav-item"><a href="#htb" class="nav-link">Buy</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
       </ul>
@@ -49,9 +49,9 @@ include "koneksi.php"
 <!-- hero -->
 <section class="hero text-center py-5">
   <div class="container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OQWHFmPDVRg?si=D9TAboWZzWdC4zDe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <h1>Selamat Datang di Kantin Sekolah!</h1>
-      <p class="lead">Makanan Murah untuk mu!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BksBNbTIoPE?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h1>Selamat Datang!</h1>
+      <p class="lead">Di kantin Telkom sehat</p>
   </div>
 </section>
 
@@ -64,8 +64,8 @@ include "koneksi.php"
       </div>
       <div class="col-md-6">
         <h2>About Kantin</h2>
-        <p>Kantin sekolah adalah tempat yang menyediakan makanan dan minuman sehat bagi siswa-siswi setiap hari. Terdapat berbagai pilihan kantin seperti Kantin Rika, Batagor Mas Riki, dan Rumah Bu Eka.</p>
-        <p>Kebersihan dan kualitas makanan selalu kami jaga untuk kenyamanan dan kesehatan bersama.</p>
+        <p>Telkom School Memiliki kantin dengan berbagai makanan yang sehat dan higenis, kami selalu mengutamakan kualitas dalam produk kami.</p>
+        <p>kami menjamin setiap makanan yang dijual sehat dan bergiji.</p>
       </div>
     </div>
   </div>
@@ -74,7 +74,7 @@ include "koneksi.php"
 <!-- Cafetaria List -->
 <section id="cafeteria" class="py-5">
   <div class="container">
-  <h2 class="mb-4">Cafeteria List</h2>
+  <h2 class="mb-4">Beli</h2>
   <div class="row">
     <?php
     $query = mysqli_query($koneksi, "SELECT menu.*, kantin.nama AS nama_kantin FROM menu JOIN kantin ON menu.id_kantin = kantin.id");
@@ -97,7 +97,7 @@ include "koneksi.php"
 <!-- htb -->
 <section id="htb" class="py-5">
   <div class="container">
-    <h2 class="mb-4 text-center">How To Buy</h2>
+    <h2 class="mb-4 text-center">Beli</h2>
     <p class="lead">Pilihlah Makanan atau minuman yang tersedia!, Jangan lupa untuk dibayar ya</p>
     <form action="" method="post">
       <div class="mb-3">
@@ -147,6 +147,6 @@ include "koneksi.php"
 <!-- Footer -->
 <section>
   <footer class="bg-primary text-center text-white py-3">
-    <p>&copy; Dean Ansel Picauly || XI Tel 8</p>
+    <p>&copy; Abidzar Al-Ghifari || XI Tel 8</p>
   </footer>
 </section>

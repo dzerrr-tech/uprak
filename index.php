@@ -28,7 +28,7 @@ include "koneksi.php"
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-primary sticky-top navbar-dark">
+<nav class="navbar navbar-expand-lg bg-black sticky-top navbar-dark">
   <div class="container">
     <img src="img/logo.png" alt="logo" class="rounded-circle" width="50" height="50">
     <a class="navbar-brand" href="#">Abidzar Al-Ghifari</a>
@@ -138,7 +138,7 @@ include "koneksi.php"
         <textarea name="tarea" id="message" cols="30" rows="10" class="form-control"></textarea>
       </div>
       <div class="mb-3">
-        <button type="submit"  class="btn btn-primary">Kirim Pesan!</button>
+        <button type="submit"  class="btn btn-success">Kirim Pesan!</button>
       </div>
     </form>
   </div>
@@ -146,7 +146,7 @@ include "koneksi.php"
 
 <!-- Footer -->
 <section>
-  <footer class="bg-primary text-center text-white py-3">
+  <footer class="bg-black text-center text-white py-3">
     <p>&copy; Abidzar Al-Ghifari || XI Tel 8</p>
   </footer>
 </section>
